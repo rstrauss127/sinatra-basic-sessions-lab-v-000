@@ -9,7 +9,7 @@ class App < Sinatra::Base
 
   get '/' do
     @session = session
-    @session["item"] =
+    @session["item"] = {}
     erb :index
   end
 
